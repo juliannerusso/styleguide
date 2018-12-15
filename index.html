@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- ======== Links to CSS ========= -->
+    
         <!-- Resets CSS -->
         <link rel="stylesheet" href="normalize.css">
         <!-- Resets CSS from 16.3 -->
@@ -117,8 +118,8 @@
                     <div>
                     <h4>CSS</h4>
                         <pre>
-font-family: Verdana, Geneva, Tahoma, sans-serif; 
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: brandon-grotesque, sans-serif; 
+font-family: williams-caslon-text, serif;
                         </pre>
                     </div>
                 </section>
@@ -141,66 +142,64 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
                             <span class="color-shape color-red">
 
                             </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
+                            <div class="box oceanteal"></div>
+                            <p>Ocean Teal</p>
+                            <p>#005F70</p>
                         </div>
-                        <div class="color-item">
-                            <span class="color-shape color-orange">
-
-                            </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
-                        </div>
-                        <div class="color-item">
-                            <span class="color-shape color-yellow">
-
-                            </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
-                        </div>
-                        <div class="color-item">
-                            <span class="color-shape color-green">
-
-                            </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
-                        </div>
+                 
+                        
                     </div>
                     <br>
                     <!-- Secondary Colors-->
                         <h3>
                             Secondary Colors
                         </h3>
+
+
                     <!--Color Palette / red-->
                     <div class="row-container">
                         <div class="color-item">
                             <span class="color-shape color-blue">
 
                             </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
+                            <div class="box majesticblue"></div>
+                            <p>Majestic Blue</p>
+                            <p>#033152</p>
                         </div>
                         <div class="color-item">
-                            <span class="color-shape color-purple">
+                            <span class="box wheatplain">
 
                             </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
+                            <div class="box wheatplain"></div>
+                            <p>#Wheat Plain</p>
+                            <p>#FFE8A5</p>
                         </div>
-                        <div class="color-item">
-                            <span class="color-shape color-gray">
+                    </div>
+                    </br>
+                    <br>
+                    <!-- Tertiary Colors-->
+                            <h3>
+                                Tertiary Colors
+                            </h3>
 
-                            </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
-                        </div>
-                        <div class="color-item">
-                            <span class="color-shape color-black">
+                            <div class="row-container">
+                                <div class="color-item">
+                                <span class="color-shape color-gray">
 
-                            </span>
-                            <p>#00000</p>
-                            <p>#00000</p>
-                        </div>
+                                </span>
+                                <div class="box coastalaqua"></div>
+                                <p>#Coastal Aqua</p>
+                                <p>#41C1B0</p>
+                            </div>
+
+                             <div class="color-item">
+                                <span class="color-shape color-black">
+
+                                </span>
+                                <div class="box wheatplain"></div>
+                                <p>Desert Sunset</p>
+                                <p>#DD7B18</p>
+                            </div>
                     </div>    
                     <section class="code">
                             <div>
@@ -239,14 +238,14 @@ button:hover {
                         <button class="button-normal">
                             Normal
                         </button>
+                        <button class="button-focus">
+                            Focus
+                        </button>
                         <button class="button-hover">
                             Hover
                         </button>
-                        <button class="button-pressed">
-                            Pressed
-                        </button>
-                        <button class="button-loading">
-                            <i class="fas fa-spinner"></i> Loading
+                        <button class="button-active">
+                            Active
                         </button>
                         <button class="button-disable">
                             Disabled
@@ -256,18 +255,48 @@ button:hover {
                             <div>
                             <h4>CSS</h4>
                                 <pre>
-/*Primary Colors*/                
+              
 button {
-    background: tomato;
-    height: 40px;
+    height: 45px;
     width: 120px;
-    border-radius: 4px;
-    padding: 5px;
-    margin: 20px;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-button:hover {
-    background: yellow;
+.button-normal {
+    background-color: #FFE8A5;
+    color: #033152;
+    border: none;
+
+}
+
+.button-focus {
+    background-color: #FFE8A5;
+    color: #033152;
+    border-width: 2px;
+    border-color: #033152;
+
+}
+
+.button-hover {
+    background-color: #005F70;
+    color: #FFE8A5;
+    border: none;
+}
+
+.button-active {
+    background-color: #033152;
+    color: #FFE8A5;
+    border: none;
+
+}
+
+.button-disable {
+    background-color: #cccccc;
+    color: #707070;
+    border: none;
 }
   
                                 </pre>
@@ -282,15 +311,27 @@ button:hover {
                 <h1>
                     Icons
                 </h1>
-                <div class="row-container usps-icons">
-                    <i class="fas fa-cubes"></i>
-                    <i class="fas fa-box"></i>
-                    <i class="fas fa-cube"></i>
-                    <i class="fas fa-envelope-square"></i>
-                    <i class="far fa-envelope"></i>
-                    <i class="fas fa-envelope-open-text"></i>
-                    <i class="fas fa-fighter-jet"></i>
-                    <i class="fas fa-shipping-fast"></i>
+                <div class="row-container">
+    
+                    <img src="Images/Icons/archive-2.svg" height="48px" width="48px">
+                    <img src="Images/Icons/book-08.svg" height="48px" width="48px">
+                    <img src="Images/Icons/disk-2.svg" height="48px" width="48px">
+                    <img src="Images/Icons/email-83.svg" height="48px" width="48px">
+                    <img src="Images/Icons/folder-download.svg" height="48px" width="48px">
+                    <img src="Images/Icons/ic_phone_48px.svg" height="48px" width="48px">
+                    <img src="Images/Icons/logo-facebook.svg" height="48px" width="48px">
+                    <img src="Images/Icons/logo-instagram-2.svg" height="48px" width="48px">
+                    <img src="Images/Icons/logo-linkedin.svg" height="48px" width="48px">
+                    <img src="Images/Icons/logo-twitter.svg" height="48px" width="48px">
+                    <img src="Images/Icons/menu-bold.svg" height="48px" width="48px">
+                    <img src="Images/Icons/printer.svg" height="48px" width="48px">
+                    <img src="Images/Icons/search-to-close.svg" height="48px" width="48px">
+                    <img src="Images/Icons/simple-remove.svg" height="48px" width="48px">
+                    <img src="Images/Icons/stre-down.svg" height="48px" width="48px">
+                    <img src="Images/Icons/stre-left-2.svg" height="48px" width="48px">
+                    <img src="Images/Icons/stre-right-2.svg" height="48px" width="48px">
+                
+                    
                 </div>
             </article>
             <hr>
@@ -302,10 +343,10 @@ button:hover {
                         Imagery
                     </h1>
                     <div class="row-container-around">
-                        <img src="https://via.placeholder.com/350x250">
-                        <img src="https://via.placeholder.com/350x250">
-                        <img src="https://via.placeholder.com/350x150">
-                        <img src="https://via.placeholder.com/350x150">
+                        <img src="Images/Art-direction/nature.png" width=300px height=100%>
+                        <img src="Images/Art-direction/hero.png" width=300px height=100%>
+                        <img src="Images/Art-direction/naturalresources.png" width=300px height=100%>
+                        <img src="Images/Art-direction/community.png" width=300px height=100%>
                     </div>
                 </article>
                 <hr>
@@ -317,13 +358,13 @@ button:hover {
                     Contact Me
                 </h1>
                 <div class="row-container-around">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/juliannerusso">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/juliannerusso">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="mailto:YOUREMAIL">
+                    <a href="mailto:juliannejrusso@gmail.com">
                         <i class="fa fa-envelope"></i>
                     </a>
                 </div>
